@@ -6,6 +6,7 @@ import (
 )
 
 func GetMd5(input string) string {
+	/** Get Md5 Hash for a string */
 	hash := md5.New()
 	defer hash.Reset()
 	hash.Write([]byte(input))
